@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using System.Data.OracleClient;
 
 namespace iTravel
 {
@@ -252,7 +252,7 @@ namespace iTravel
         }
 
          bool  flagRegister;//定义标志位，确认用户注册
-         string strConnect = "Data Source=CAI-PC\\SQLEXPRESS;Initial Catalog=MyData1;Persist Security Info=True;User ID=sa;Password=******";
+         string connString = "data source=120.24.97.173/orcl;User Id=system;Password=517012;";
          //连接数据库字符串
          private void buttonX1_Click(object sender, EventArgs e)
         {
